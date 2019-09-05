@@ -1,0 +1,37 @@
+class bfs():
+    bfsarray=[]
+    stack=[]
+    def __init__(self,start,end,graph_dict):
+        self.start = start
+        self.end = end
+        self.graph_dict = graph_dict
+    def if_node_is_already_checked(self,start):
+        if start not in self.bfsarray:return start
+    def main(self):
+        stack=0
+        self.stack.append(self.start)
+        self.bfsarray.append(start)
+        while len(self.bfsarray) <= 8:
+            print("start=",self.start,"stack",self.stack,"bfsarray=",self.bfsarray)
+            if stack == None:break
+            else:
+                value = self.graph_dict[self.start]
+                le=len(value)
+                leng=le-1
+                for l in range(le):
+                    v=self.if_node_is_already_checked(value[l])
+                    if v != None:
+                        self.bfsarray.append(v)
+                        self.stack.append(v)
+                        self.start=v
+                    elif l == leng and v ==None:
+                        self.stack.pop()
+                        var=len(self.stack)-1
+                        if var <0:stack= None
+                        else:self.start=self.stack[var]
+        if self.end in self.bfsarray:print("connected")
+        else:print("notconnected")
+start=7
+end=4
+z=bfs(start,end,graph_dict)
+r=z.main() 
