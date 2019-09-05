@@ -33,5 +33,6 @@ class bfs():
         else:print("notconnected")
 start=7
 end=4
+graph_dict={1: [2], 2: [6, 7, 3, 1], 3: [4, 2, 5], 4: [2, 5, 3], 5: [3, 4], 6: [2], 7: [2], 8: [9],9: [8]}
 z=bfs(start,end,graph_dict)
 r=z.main() 
