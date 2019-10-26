@@ -1,4 +1,4 @@
-# Bipin_Python_Learning_Group
+# Python_Learning_Group
 This repository is created for uploading the completed tasks of a python practise group.
 Task(1) 
 The first task has been completed and it is to make a dictionary from key:value pairs (with some keys having multiple values) given in form of tuple to the code.
